@@ -1,0 +1,670 @@
+
+*{
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1360px
+}
+body{
+	
+
+}
+.clean{
+	clear: both;
+}
+.logoImg2 {
+	margin: 0px auto;
+
+	width:326px;
+    height:198px;
+
+    box-shadow: 0 0 5px 4px;
+    display: none;
+
+}
+
+
+
+#logoImg2ItSelf {
+	padding-top: 16px;
+	padding-left: 85px;
+	width: 173px;
+	
+	
+}
+
+
+
+#header {
+	height: 100px;
+	background: #34495e;
+}
+@media screen and (max-width: 600px){
+	.logoImg {
+		
+	display: none ;
+	}
+	.logoImg2{
+	display: block;
+	} 
+	#header {
+	height: 80px;
+	
+	}	
+
+}
+
+
+#header img{
+	margin-left: 10px;
+	margin-right: 20px;
+	transition: 0.4s;
+	float: left;
+	box-shadow: 0 0 3px 1px ;
+}
+#header img:hover{
+	box-shadow: 0 0 3px 1px  #1f17ef;
+
+}
+
+#headText {
+	padding-top: 25px;
+	padding-left: 50px;
+	font-size: 120%;
+	transition: 0.4s;
+	color: white;
+
+}
+#headText:hover{
+	color:#3498db;
+}
+
+.menu {
+		float: right;
+		position: relative;
+		bottom: 29px;
+		right: 10px;
+		transition: 0.4s;
+
+	}
+	.menu a{
+		color: #fff;
+		text-decoration: uppercase;
+		text-decoration: none;
+		padding: 0 10px;
+		transition: 0.4s; 
+	}
+	#viberLogo {
+		font-size: 200%;
+	}
+	
+	.show-menu-btn,.hide-menu-btn
+	{
+		transition: 0.4s;
+		font-size: 30px;
+		cursor: pointer;
+		display: none;
+	}
+	.show-menu-btn
+	{
+	float: right;
+	}
+	.show-menu-btn i{
+  line-height: 100px;
+}
+	.menu a:hover,
+	.show-menu-btn:hover,
+	.hide-menu-btn:hover
+	 {
+		color:#3498db;
+		font-size: 130%;
+	}
+	#chk {
+		position: absolute;
+		visibility: hidden;
+		z-index: -1111;
+	}
+	.phoneNumberInSmallScreen {
+		display: none;
+
+	}
+	.phoneNumberInBigScreen {
+		color: white;
+		display: block;
+		float: right;
+		transition: 0.4s;
+		
+	}
+	.phoneNumberInBigScreen:hover {
+		font-size: 110%;
+	}
+	
+	.navText{
+		position: relative;
+		bottom: 5px;
+		font-size: 120%;
+		transition: 0.5s;
+	}
+
+	#vb_mb
+	{
+	display:none
+	}
+
+	
+
+	
+	
+	
+	@media screen and (max-width: 1285px){
+		.menu {
+		
+		padding-top: 40px ;
+	}
+
+}
+
+	
+
+		
+	@media screen and (max-width: 900px) {
+		#headText{
+			display: none;
+		}
+		.phoneNumberInSmallScreen {
+			color: white;
+			transition:0.4s;
+		}
+		.phoneNumberInSmallScreen:hover{
+			color:#3498db
+		}
+		.show-menu-btn,.hide-menu-btn {
+			display: block;
+			color: white;
+		}
+		.menu {
+			
+			width: 100%;
+			height: 100vh;
+			background: #333;
+			right: -100%;
+			position: fixed;
+			top: 0;
+			text-align: center;
+			padding: 80px 0;
+			line-height: normal;
+			transition: 0.7s;
+		}
+		
+		.menu a {
+			display: block;
+			padding: 20px;
+		}
+		.menu p {
+		display: block;
+
+
+
+	}
+
+	.phoneNumberInBigScreen {
+		display: none;
+	}
+		.icons{
+			display: block;
+			padding: 20px;
+		}
+
+		#show-menu-btnId {
+			position: relative;
+			
+			right: 35px;
+
+			
+			
+
+
+		}
+		main p {
+			display: block;
+		}
+
+
+		
+		.hide-menu-btn 
+		{
+			position: absolute;
+			top: 40px;
+			right: 40px;
+		}
+		#chk:checked ~ .menu{
+	    right: 0;
+
+	 	}
+	 	
+
+
+
+
+
+	#vb_pk{display:none}
+	#vb_mb{display:block}
+
+
+	}
+
+/*
+main text
+*/
+.mainText
+{
+	display: none;
+
+}
+
+@media (max-width: 900px){
+	.mainText
+{
+	display: block; 
+	text-align: center;
+	font-size: 90%;
+	padding: 10px 1px;
+	
+}
+}
+
+/*
+
+card block
+*/
+
+.cardBox {
+  width: 400px;
+  height: 500px;
+  background-color: #f1f1f1;
+  float: right;
+  margin: 0px 60px 10px 10px;
+  box-shadow: 5px 5px 5px 5px;
+
+}
+
+.middle{
+  position: relative;
+
+  float: left;
+  margin: 0px;
+
+  
+}
+
+.backMiddle
+{
+  position: relative;
+  float: left;
+  margin: 0px;
+
+
+  
+}
+
+.card{
+  cursor: pointer;
+  width: 200px;
+  height: 250px;
+}
+.card:hover{
+	cursor: crosshair;
+}
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+  box-shadow:  0 0 1px 1px;
+}
+.front img{
+  height: 100%;
+
+}
+.front-content {
+  height: 100%;
+  background: #f1f1f1;
+  
+  
+  color: #2c3e50;
+  
+
+}
+
+.textInFront {
+  text-align: center;
+  width: 100%;
+  padding-top: 100px;
+
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  background: #f1f1f1;
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+  margin-top: 10px;
+  margin-left: 0px;
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+}
+.back-content h2{
+	padding: 3px 0;
+}
+.back-content h3{
+	padding: 3px 0 0 0;
+	font-size: 100%;
+}
+.sm{
+  margin: 20px 0;
+}
+.sm a{
+  display: inline-flex;
+  
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+
+  transition: 0.4s;
+  
+}
+.sm a:hover{
+  background: #2c3e50;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+@media (max-width: 1100px){
+	.cardBox{
+		margin-top: 50px;
+		margin-right: 40px;
+		width: 200px;
+		height: 250px;
+}
+	.card{
+		
+		width: 100px;
+		height: 125px;
+}
+	.back-content{
+	  margin-top: 10px;
+	  margin-left: 0px;
+	  color: #2c3e50;
+	  text-align: center;
+	  width: 100%;
+	  font-size: 50%;
+	}
+	.back-content h2{
+		padding: 3px 0;
+	}
+	.back-content h3{
+		
+		display: none;
+	}
+	.sm{
+	  margin: 20px 0;
+	}
+	.sm a{
+	  display: inline-flex;
+	  
+	  justify-content: center;
+	  align-items: center;
+	  color: #2c3e50;
+	  font-size: 14px;
+
+	  transition: 0.4s;
+	  
+	}
+
+}
+
+
+
+
+@media (max-width: 900px){
+	.cardBox{
+		display: none;}
+
+
+
+	
+
+.sm{
+  margin: 20px 0;
+}
+.sm a{
+  display: inline-flex;
+  
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+
+  transition: 0.4s;
+  
+}
+	
+
+}
+
+/*
+Photo of Shanghai
+*/
+@media (min-width: 900px){
+	.shanghaiPhoto{
+		display: none;
+
+	}
+
+}
+
+@media (max-width: 900px) {
+   
+	.shanghaiPhoto {display: block;
+		width: 300px;
+		float: right;
+		margin: 50px 40px 50px 10px;
+		border-radius: 5%;
+		box-shadow: 5px 5px 5px;
+	}
+}
+@media (max-width: 760px) {
+	.shanghaiPhoto {
+		width: 300px;
+		float: left;
+		margin: 50px 60px 50px 60px;
+	}
+}
+
+/*
+sixYearsOfSuccess
+*/
+
+.sixYearsOfSuccess {
+	float: right;
+	
+	font-size: 200%;
+	margin: 50px 30px 40px 20px;
+	padding: 30px;
+	text-align: center;
+	
+
+}
+.sixYearsOfSuccess li{
+	list-style-type: none;
+	padding: 5px 3px;
+}
+
+
+@media (max-width: 970px){
+	.sixYearsOfSuccess
+{	font-size: 130%;
+	margin: 40px auto;
+
+}
+}
+
+@media (max-width: 700px){
+	.sixYearsOfSuccess
+{	font-size: 180%;
+	float: left;
+	margin: 40px auto;
+
+}
+}
+
+
+/*
+features
+*/
+.features{
+	float: left;
+	margin: 50px 4px 30px 20px;
+}
+.featuresOfCompany {
+	
+	width: 700px;
+	height: 50px;
+	background-color: #212121;
+
+
+	text-align: center;
+	line-height: 50px;
+	box-shadow: 5px 5px 5px;
+	transition: 0.7s;
+
+
+}
+.featuresOfCompany:hover{
+	padding-left: 20px;
+}
+.featuresOfCompany a{
+	text-decoration: none;
+	color: white;
+	font-size: 170%;
+
+}
+
+
+
+
+@media (max-width: 1285px){
+	.featuresOfCompany {
+		width: 600px;
+	}
+}
+
+@media (max-width: 1185px){
+	.featuresOfCompany {
+		width: 600px;
+	}
+}
+@media (max-width: 1085px){
+	.featuresOfCompany {
+		width: 550px;
+	}
+}
+
+@media (max-width: 985px){
+	.featuresOfCompany {
+		width: 500px;
+		font-size: 80%;
+	}
+}
+
+
+@media (max-width: 900px){
+	.featuresOfCompany {
+		width: 380px;
+		font-size: 80%;
+	}
+	.a
+}
+
+
+
+/*
+
+footer
+*/
+
+footer {
+	margin-top: 50px;
+	height: 100px;
+	background-color: #34495e;
+	text-align: center;
+	line-height: 100px;
+	color: white;
+	font-size: 150%;
+
+}
+footer span{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+@media (max-width: 1400px){
+	footer span{
+		font-size: 100%;
+	}
+}
+@media (max-width: 1200px){
+	footer span{
+		font-size: 70%;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+@media (max-width: 800px){
+	footer span{
+		font-size: 45%;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+/*
+backgroundPhoto
+*/
+.backgroundPhoto {
+	width: 600px;
+	float: left;
+
+}
+@media (max-width: 1200px){
+	.backgroundPhoto{
+		width: 400px;
+
+		margin: 20px 5px 20px 20px;
+	}
+}
+
+@media (max-width: 1000px){
+	.backgroundPhoto{
+		width: 300px;
+
+		margin: 40px 10px 40px 50px;
+	}
+}
+@media (max-width: 600px){
+	.backgroundPhoto{
+		width: 400px;
+
+		margin: 0 20px;
+	}
+}
